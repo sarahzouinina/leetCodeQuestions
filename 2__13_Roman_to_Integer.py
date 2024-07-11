@@ -33,3 +33,31 @@ class Solution(object):
         for l in new_roman:
             sum += roman_to_int[l]
         return sum
+
+#######################################
+## The most optimized version
+#######################################
+class Solution(object):
+    def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+
+        roman = {'M':1000, 'D':500, 'C':100, 'L':50, 'X':10, 'V':5, 'I':1}
+
+        total = 0
+        prev_value = 0
+
+        for char in reversed(s):   #iterate to the string in reversed order
+            
+            current_value = roman[char]
+            
+            if current_value < prev_value:
+                total = total - current_value
+            else:
+                total = total + current_value
+                
+            prev_value = current_value
+
+        return total
