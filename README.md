@@ -36,3 +36,36 @@ Processing these entries would result in the following steps:
 - `./` -> 0 (current depth: 2)
 
 Thus, the minimum number of operations needed to return to the main folder is 2.
+
+## Problem #2: Roman to Integer
+
+### Objective
+Convert a given Roman numeral string to an integer.
+
+### Approach
+To solve this problem, the following approach can be implemented:
+
+1. Create a dictionary that maps each Roman numeral symbol (including subtractive combinations like `IV` and `IX`) to its corresponding integer value.
+2. Iterate through the string, checking for the presence of two-character subtractive combinations first. If found, append them to a list and skip the next character.
+3. If a subtractive combination is not found, append the single character to the list.
+4. After processing the entire string, sum up the values of the characters and combinations using the dictionary.
+
+### Detailed Plan
+1. Initialize a dictionary `roman_to_int` with the mappings from Roman numeral symbols to integers.
+2. Initialize a variable `sum` to keep track of the total integer value.
+3. Initialize an empty list `new_roman` to store the processed Roman numeral symbols.
+4. Use a while loop to iterate through the string:
+   - If a subtractive combination (two characters) is found in the dictionary, append it to `new_roman` and skip the next character.
+   - If not, append the single character to `new_roman`.
+5. Iterate through the `new_roman` list and sum up the values using the dictionary.
+6. Return the total sum.
+
+### Example
+Given the Roman numeral string `s = "MCMXCIV"`:
+
+1. `M` -> 1000
+2. `CM` -> 900
+3. `XC` -> 90
+4. `IV` -> 4
+
+Total: 1000 + 900 + 90 + 4 = 1994
