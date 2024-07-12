@@ -70,7 +70,7 @@ Given the Roman numeral string `s = "MCMXCIV"`:
 
 Total: 1000 + 900 + 90 + 4 = 1994
 
-## Problem #: Move Zeroes
+## Problem #3: Move Zeroes
 
 ### Problem Statement
 
