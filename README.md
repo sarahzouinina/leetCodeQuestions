@@ -69,3 +69,32 @@ Given the Roman numeral string `s = "MCMXCIV"`:
 4. `IV` -> 4
 
 Total: 1000 + 900 + 90 + 4 = 1994
+
+## Problem #2: Move Zeroes Solution Journey
+
+### Problem Statement
+
+The task is to move all zeros in a given list to the end while maintaining the relative order of the non-zero elements. The solution must modify the list in-place without using extra space for another list.
+
+### Initial Attempt
+
+My initial attempt was to create a new list, `res`, to store the non-zero elements and then append zeros to it until it matched the length of the original list. The code looked like this:
+
+```python
+def moveZeroes(self, nums):
+    i = 0
+    res = []
+    for i in nums:
+        if i != 0:
+            res.append(i)
+
+    j = len(res)
+    while j < len(nums):
+        res.append(0)
+        j += 1
+    return res
+
+
+Issues with Initial Attempt
+Not In-Place: This approach creates a new list res instead of modifying the original list nums in-place.
+Return Value: The problem specifies not to return anything, but to modify the list directly.
