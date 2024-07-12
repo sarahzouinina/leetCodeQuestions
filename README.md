@@ -70,7 +70,7 @@ Given the Roman numeral string `s = "MCMXCIV"`:
 
 Total: 1000 + 900 + 90 + 4 = 1994
 
-## Problem #2: Move Zeroes Solution Journey
+## Problem #: Move Zeroes
 
 ### Problem Statement
 
@@ -92,9 +92,8 @@ def moveZeroes(self, nums):
     while j < len(nums):
         res.append(0)
         j += 1
-    return res
-
-
+    return res 
+```
 Issues with Initial Attempt
 Not In-Place: This approach creates a new list res instead of modifying the original list nums in-place.
 Return Value: The problem specifies not to return anything, but to modify the list directly.
