@@ -97,3 +97,14 @@ def moveZeroes(self, nums):
 Issues with Initial Attempt
 Not In-Place: This approach creates a new list res instead of modifying the original list nums in-place.
 Return Value: The problem specifies not to return anything, but to modify the list directly.
+## Problem #4: Find Maximum Average Subarray
+Given an array of integers nums and an integer k, find the maximum average value of a subarray of length k.
+
+###Input
+nums: List of integers.
+k: Integer representing the length of the subarray.
+###Output
+The function should return a float representing the maximum average value of a subarray of length k.
+###Solution
+Sliding Window Algorithm
+To solve this problem efficiently, we can use the sliding window algorithm. The idea is to maintain a window of size k and slide it across the array while updating the sum and maximum average.
