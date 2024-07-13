@@ -100,11 +100,11 @@ Return Value: The problem specifies not to return anything, but to modify the li
 ## Problem #4: Find Maximum Average Subarray
 Given an array of integers nums and an integer k, find the maximum average value of a subarray of length k.
 
-###Input
+### Input
 nums: List of integers.
 k: Integer representing the length of the subarray.
-###Output
+### Output
 The function should return a float representing the maximum average value of a subarray of length k.
-###Solution
+### Solution
 Sliding Window Algorithm
 To solve this problem efficiently, we can use the sliding window algorithm. The idea is to maintain a window of size k and slide it across the array while updating the sum and maximum average.
