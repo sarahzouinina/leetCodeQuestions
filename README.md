@@ -145,3 +145,18 @@ def largestAltitude(self, gain):
     highest = max(sum_element)
     return max(highest, 0)
 ```
+### Problem 6: Reverse Vowels of a String
+
+This program reverses the vowels in a given string while preserving the positions of all non-vowel characters. It handles both lowercase and uppercase vowels.
+
+## Problem Statement
+
+Given a string, reverse only the vowels and keep all other characters in their original positions.
+
+The solution involves the following steps:
+
+1. **Collecting Vowels**: Traverse the string and collect all vowels into a list.
+2. **Reversing the Vowels**: Reverse the list of collected vowels.
+3. **Constructing the Output**: Traverse the original string again and replace each vowel with the corresponding vowel from the reversed list while keeping non-vowel characters in their original positions.
+ 
+ The solution needs more optimization 
