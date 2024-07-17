@@ -108,3 +108,40 @@ The function should return a float representing the maximum average value of a s
 ### Solution
 Sliding Window Algorithm
 To solve this problem efficiently, we can use the sliding window algorithm. The idea is to maintain a window of size k and slide it across the array while updating the sum and maximum average.
+# Highest Altitude Problem
+
+## Problem #5:
+
+A biker is on a road trip consisting of `n + 1` points at different altitudes, starting at point 0 with an altitude of 0.
+
+Given an integer array `gain` of length `n`, where `gain[i]` represents the net gain in altitude between points `i` and `i + 1` (for `0 <= i < n`), return the highest altitude reached.
+
+#### Example 1
+- **Input:** `gain = [-5, 1, 5, 0, -7]`
+- **Output:** `1`
+- **Explanation:** The altitudes are `[0, -5, -4, 1, 1, -6]`. The highest is `1`.
+
+#### Example 2
+- **Input:** `gain = [-4, -3, -2, -1, 4, 3, 2]`
+- **Output:** `0`
+- **Explanation:** The altitudes are `[0, -4, -7, -9, -10, -6, -3, -1]`. The highest is `0`.
+
+## Solution
+
+#### Method: `largestAltitude`
+
+```python
+def largestAltitude(self, gain):
+    """
+    :type gain: List[int]
+    :rtype: int
+    """
+    i = len(gain)
+    sum_element = []
+    highest = 0
+    while i > 0:
+        sum_element.append(sum(gain[0:i]))
+        i -= 1
+    highest = max(sum_element)
+    return max(highest, 0)
+```
