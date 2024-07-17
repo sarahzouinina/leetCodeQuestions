@@ -110,7 +110,7 @@ Sliding Window Algorithm
 To solve this problem efficiently, we can use the sliding window algorithm. The idea is to maintain a window of size k and slide it across the array while updating the sum and maximum average.
 # Highest Altitude Problem
 
-## Problem #5:
+## Problem #5: Highest Altitude Problem
 
 A biker is on a road trip consisting of `n + 1` points at different altitudes, starting at point 0 with an altitude of 0.
 
