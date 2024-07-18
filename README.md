@@ -160,3 +160,23 @@ The solution involves the following steps:
 3. **Constructing the Output**: Traverse the original string again and replace each vowel with the corresponding vowel from the reversed list while keeping non-vowel characters in their original positions.
  
  The solution needs more optimization 
+
+
+### Problem 7: Reverse Words in a String
+Given a string, reverse all the words without returning extra space.
+
+Example 1:
+
+Input: s = "the sky is blue"
+Output: "blue is sky the"
+Example 2:
+
+Input: s = "  hello world  "
+Output: "world hello"
+Explanation: Your reversed string should not contain leading or trailing spaces.
+Example 3:
+
+Input: s = "a good   example"
+Output: "example good a"
+Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
+
