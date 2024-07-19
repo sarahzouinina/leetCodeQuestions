@@ -180,3 +180,25 @@ Input: s = "a good   example"
 Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
+### Problem 8: String Compression
+
+This script implements a character compression algorithm that compresses an array of characters based on consecutive repetitions. Each group of consecutive characters is represented by the character followed by the number of times it appears consecutively, but only if it appears more than once. The compression is done in-place to utilize space efficiently, and the result modifies the original array of characters.
+
+#### How It Works
+The algorithm uses two pointers (read and write) to traverse and modify the array in-place. As the read pointer goes through the array, it counts occurrences of each character until a different character is encountered. The write pointer is used to write the character and its count (if greater than one) back into the array. This approach ensures that the space complexity remains constant, as no additional significant space is used apart from the input array.
+
+Example 1:
+
+Input: chars = ["a","a","b","b","c","c","c"]
+Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"]
+Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".
+Example 2:
+
+Input: chars = ["a"]
+Output: Return 1, and the first character of the input array should be: ["a"]
+Explanation: The only group is "a", which remains uncompressed since it's a single character.
+Example 3:
+
+Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
+Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"].
+Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
