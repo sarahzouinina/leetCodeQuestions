@@ -202,3 +202,14 @@ Example 3:
 Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
 Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"].
 Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
+
+### Problem 9: Distinct Elements Finder
+
+This Python script helps in finding distinct elements between two lists. It effectively identifies and returns a list of integers that are present in one list but not in the other. The result is given in two sublists, where the first sublist contains elements unique to the first input list and the second sublist contains elements unique to the second input list.
+
+#### Features
+
+- Identify elements in `nums1` not present in `nums2`.
+- Identify elements in `nums2` not present in `nums1`.
+- Handles duplicate values within each list.
+- Returns results in any order.
