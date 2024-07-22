@@ -213,3 +213,17 @@ This Python script helps in finding distinct elements between two lists. It effe
 - Identify elements in `nums2` not present in `nums1`.
 - Handles duplicate values within each list.
 - Returns results in any order.
+
+
+### Problem 10: Equal Row and Column Pairs
+
+This project contains a solution to the [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) problem from LeetCode.
+
+#### Problem Description
+
+Given a `n x n` matrix `grid`, the task is to return the number of pairs `(ri, cj)` such that row `ri` and column `cj` are equal.
+
+#### Solution Approach
+* Transpose the Matrix: Convert the columns of the matrix into rows.
+* Compare Rows and Columns: Compare each row with each column to find matches.
+* Count Matches: Count the number of pairs where a row and a column are equal.
