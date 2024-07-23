@@ -149,7 +149,7 @@ def largestAltitude(self, gain):
 
 This program reverses the vowels in a given string while preserving the positions of all non-vowel characters. It handles both lowercase and uppercase vowels.
 
-## Problem Statement
+#### Problem Statement
 
 Given a string, reverse only the vowels and keep all other characters in their original positions.
 
