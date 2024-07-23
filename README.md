@@ -227,3 +227,10 @@ Given a `n x n` matrix `grid`, the task is to return the number of pairs `(ri, c
 * Transpose the Matrix: Convert the columns of the matrix into rows.
 * Compare Rows and Columns: Compare each row with each column to find matches.
 * Count Matches: Count the number of pairs where a row and a column are equal.
+
+### Problem 11: Max Number of K-Sum Pairs
+#### Problem Statement
+Given an integer array nums and an integer k, in one operation, you can pick two numbers from the array whose sum equals k and remove them from the array. Return the maximum number of operations you can perform on the array.
+
+#### Solution: Two-Pointer Approach
+This approach involves sorting the array and using two pointers to find pairs that sum up to k.
