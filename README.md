@@ -241,8 +241,30 @@ This approach involves sorting the array and using two pointers to find pairs th
 You are given a string s which contains some characters and stars (*). In one operation, you can:
 
 Choose a star (*) in s.
+
 Remove the closest non-star character to its left, as well as remove the star itself.
 Return the string after all stars have been removed.
 
 #### Solution:
 using the stack pop feature once we encounter a star
+
+
+
+### Problem 13: Decode Encoded Strings
+
+This project provides a function to decode strings encoded in the format `k[encoded_string]`, where the `encoded_string` inside the square brackets is repeated exactly `k` times.
+
+#### Description
+
+The decoding rule is:
+- `k[encoded_string]` is expanded to `encoded_string` repeated `k` times.
+
+For example:
+- `3[a]2[bc]` is decoded to `aaabcbc`.
+- `3[a2[c]]` is decoded to `accaccacc`.
+- `2[abc]3[cd]ef` is decoded to `abcabccdcdcdef`.
+
+#### Implementation
+
+The function `decodeString` uses regular expressions to find and decode the innermost patterns iteratively until the entire string is decoded.
+
