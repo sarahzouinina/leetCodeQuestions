@@ -108,9 +108,8 @@ The function should return a float representing the maximum average value of a s
 ### Solution
 Sliding Window Algorithm
 To solve this problem efficiently, we can use the sliding window algorithm. The idea is to maintain a window of size k and slide it across the array while updating the sum and maximum average.
-# Highest Altitude Problem
 
-## Problem #5: Highest Altitude Problem
+### Problem #5: Highest Altitude Problem
 
 A biker is on a road trip consisting of `n + 1` points at different altitudes, starting at point 0 with an altitude of 0.
 
@@ -126,7 +125,7 @@ Given an integer array `gain` of length `n`, where `gain[i]` represents the net 
 - **Output:** `0`
 - **Explanation:** The altitudes are `[0, -4, -7, -9, -10, -6, -3, -1]`. The highest is `0`.
 
-## Solution
+### Solution
 
 #### Method: `largestAltitude`
 
