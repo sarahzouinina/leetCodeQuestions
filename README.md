@@ -267,3 +267,7 @@ For example:
 
 The function `decodeString` uses regular expressions to find and decode the innermost patterns iteratively until the entire string is decoded.
 
+### Problem 14: Reverse a linkedList
+#### Description
+
+The problem is straight forward, we need to reverse a linked list 
